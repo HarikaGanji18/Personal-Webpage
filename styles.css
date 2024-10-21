@@ -1,0 +1,349 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 4px 8px white;
+    margin: 0;
+    padding: 0;
+    
+}
+.logo{
+    font-size: 1em;
+    font-weight: bold;
+   transform: scale(0.5);
+    animation: scaleUp 2s ease-in-out forwards;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    
+}
+@keyframes scaleUp{
+    to{
+       transform: scale(1);
+    }
+
+}
+.logo h2{
+
+    color: white;
+    font-family: 'Stylish', serif;
+   
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 15px;
+    position: relative;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+nav ul li::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: beige;
+    top: 20px;
+    left: 0;
+    transition: width .3s ease-in-out;
+}
+
+nav ul li:hover::before{
+    width: 100%;
+    transform: translateX(0);
+}
+
+.logo {
+    margin: 0px 0px 0px 20px;
+}
+
+nav button {
+    width: 80px;
+    height: 30px;
+    background-color: thistle;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: scale .1s linear;
+}
+
+
+.button button:hover {
+    transform: scale(1.1);
+} 
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: medium;
+}
+.banner-section {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 45px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Afacad Flux';
+    text-decoration: ;
+}
+.banner-subtitle {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-family: sans-serif;
+}
+.banner-button {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    color: white; /* Button text color */
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-family: 'Afacad Flux';
+    background-color: black; 
+    border: 2px solid transparent; 
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; =
+}
+
+.banner-button:hover {
+    box-shadow: 2px 4px 12px black; 
+                
+}
+
+.main-section h4 {
+    font-family: 'Afacad Flux';
+    text-align: center; 
+    color: white;
+    font-size: 30px;
+    background-color: gray;
+    height: auto;
+    width: 25%; 
+    border-radius: 10px 20px;
+    position: relative; 
+    left: 2; 
+    padding: 2px; 
+    margin: 0; 
+}
+
+
+.category-section {
+    margin: 0;
+    position: relative;
+}
+.category-section h2 {
+    position: absolute; /* Position the heading absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Adjust font size as needed */
+    color: #333;
+ }
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.fiction-section {
+    background-color: thistle;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.fiction-section h2 {
+    color: white;
+    font-family: 'Montserrat Alternates';
+    font-size: 30px;
+}
+
+.fiction-section p {
+    color: black;
+    font-size: 13px;
+}
+
+/* Card Styling */
+.card {
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border: 4px solid thistle;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    transition: box-shadow 0.3s ease,
+    transform 0.3s ease;
+
+}
+.card:hover{
+
+    box-shadow: 0 0 20px white;
+    /* 0 0 40px white; */
+    transform: scale(1.05);
+}
+
+/* .card img {
+    width: 100%;
+    height: 55%;
+    object-fit: contain;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 15px; 
+    padding: 10px 0;
+    border: none;
+    margin-bottom: 0;
+    border-radius: 1px; */
+    /* transition: transform 0.3s ease; */
+/* } */
+.card img:hover{
+
+    /* transform: scale(1.1); */
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: black;
+    font-family: 'Montserrat';
+}
+
+.card p {
+    color: #666;
+    font-size: 10px;
+    flex-grow: 1;
+    justify-content: left;
+    font-family: 'Afacad Flux';
+}
+
+.card a {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.card a:hover {
+    background-color: #2980b9;
+}
+.image-container {
+    background-color: white; /* Light background color */
+    padding: 5px; /* Space between image and container border */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: inline-block; /* Makes the container wrap tightly around the image */
+    width: 100%; /* Make the container width 100% */
+    max-width: 250px; /* Maximum width of the container */
+    height: 130px; /* Fixed height */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Hide overflow to prevent stretching */
+    border: 1px solid gray;
+}
+
+.image-container img {
+    width: 100%; /* Ensure the image width matches the container */
+    height: 100%; /* Adjust the height of the image to match the container */
+    object-fit: contain; /* Ensure the image covers the container while maintaining aspect ratio */
+    border-radius: 8px; /* Match the rounded corners of the container */
+}
+/* .details {
+    display: none;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+} */
+/* When the :target pseudo-class is used, display the details */
+/* #details:target + .details {
+    display: block;
+} */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+.details {
+    display: none; /* Hide details by default */
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.show-details-btn,
+.hide-details-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.show-details-btn:hover,
+.hide-details-btn:hover {
+    background-color: #2980b9;
+}
+
+.show-details-btn:focus + .details,
+.details:focus {
+    display: block; /* Show details when the button is clicked */
+}
+
+.hide-details-btn:focus + .show-details-btn {
+    display: block; /* Show the "Show" button when details are hidden */
+}

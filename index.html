@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSphere</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Calligraffitti&family=Stylish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for the Learn More feature */
+        .details {
+            display: none; /* Hide details by default */
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Show details when the link is targeted */
+        .details:target {
+            display: block; /* Show the details when targeted */
+        }
+
+        /* Add styles for the Learn More link */
+        .learn-more {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Style for the close link */
+        .close {
+            color: red;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>BookSphere</h2>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Featured Book</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="button">
+                <button>Join Now</button>
+            </div>
+        </nav>
+    </header>
+    <div class="main-section">
+        <div class="banner-section">
+            <img src="book-1283865.jpg" width="100%" height="400px" alt="">
+            <h2 class="banner-title">Where Stories Come to Life</h2>
+            <p class="banner-subtitle">Step into the narrative and let the journey begin</p>
+            <button class="banner-button">Explore more</button>
+        </div>
+
+        <h4>Categories</h4>
+        <div class="container">
+            <section class="fiction-section">
+                <h2>Fictional Stories</h2>
+                <p>Explore the best of fiction books, from timeless classics to modern masterpieces.</p>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="https://m.media-amazon.com/images/I/61IDGBuJYZL.AC_UF1000,1000_QL80.jpg" alt="Book Cover" height="auto">
+                    </div>
+                    <h3>"Echoes in the Mist"</h3>
+                    <p>"Echoes in the Mist" is a mysterious and atmospheric novel that weaves a tale of secrets, love, and the passage of time. Set in a small, fog-covered coastal town, the story follows a protagonist who returns to their childhood home after many years away. As they uncover hidden letters, old journals, they begin to piece together the town’s dark past and its connection to a series of unexplained disappearances.</p>
+                    <button class="show-details-btn">Show Book Details</button>
+                    <div class="details">
+                        <p><strong>Author:</strong> Jane Doe</p>
+                        <p><strong>Genre:</strong> Mystery, Fiction</p>
+                        <p><strong>Publication Year:</strong> 2023</p>
+                        <p><strong>Description:</strong> Set in a small, fog-covered coastal town, the story follows a protagonist who returns to their childhood home after many years away. As they uncover hidden letters and old journals, they begin to piece together the town’s dark past and its connection to a series of unexplained disappearances.</p>
+                        <button class="hide-details-btn">Hide Book Details</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
