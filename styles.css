@@ -1,19 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Quicksand:wght@300..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
-
-
-*
-{
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
+
+/* Body */
+body {
     margin: 0;
     padding: 0;
 }
 
+/* Navigation Bar */
 nav {
     width: 100%;
     height: 70px;
@@ -22,29 +23,25 @@ nav {
     justify-content: space-between;
     align-items: center;
     box-shadow: 2px 4px 8px white;
-    margin: 0;
-    padding: 0;
-    
 }
-.logo{
+
+.logo {
     font-size: 1em;
     font-weight: bold;
-   transform: scale(0.5);
+    transform: scale(0.5);
     animation: scaleUp 2s ease-in-out forwards;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    
 }
-@keyframes scaleUp{
-    to{
+
+@keyframes scaleUp {
+    to {
        transform: scale(1);
     }
-
 }
-.logo h2{
 
+.logo h2 {
     color: white;
     font-family: 'Stylish', serif;
-   
 }
 
 nav ul li {
@@ -54,7 +51,6 @@ nav ul li {
     cursor: pointer;
     font-size: 1rem;
 }
-
 
 nav ul li::before {
     content: "";
@@ -67,9 +63,8 @@ nav ul li::before {
     transition: width .3s ease-in-out;
 }
 
-nav ul li:hover::before{
+nav ul li:hover::before {
     width: 100%;
-    transform: translateX(0);
 }
 
 .logo {
@@ -82,29 +77,26 @@ nav button {
     background-color: thistle;
     color: white;
     border: none;
-    outline: none;
     border-radius: 5px;
     margin-right: 20px;
     cursor: pointer;
     transition: scale .1s linear;
 }
 
-
 .button button:hover {
     transform: scale(1.1);
-} 
+}
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-family: 'Montserrat';
-    font-size: medium;
 }
+
+/* Banner Section */
 .banner-section {
     position: relative;
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
 .banner-title {
@@ -114,12 +106,9 @@ nav ul li a {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 45px;
-    /* background: rgba(0, 0, 0, 0.5); */
-    padding: 10px 20px;
-    border-radius: 8px;
     font-family: 'Afacad Flux';
-    text-decoration: ;
 }
+
 .banner-subtitle {
     position: absolute;
     top: 60%;
@@ -127,59 +116,42 @@ nav ul li a {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 18px;
-    padding: 5px 15px;
-    border-radius: 8px;
-    font-family: sans-serif;
 }
+
 .banner-button {
     position: absolute;
     left: 50%;
     top: 70%;
     transform: translate(-50%, -50%);
-    color: white; /* Button text color */
+    color: white;
     font-size: 18px;
     padding: 5px 15px;
     border-radius: 20px;
     font-family: 'Afacad Flux';
-    background-color: black; 
-    border: 2px solid transparent; 
+    background-color: black;
     cursor: pointer;
-    transition: box-shadow 0.3s ease; =
+    transition: box-shadow 0.3s ease;
 }
 
 .banner-button:hover {
-    box-shadow: 2px 4px 12px black; 
-                
+    box-shadow: 2px 4px 12px black;
 }
 
+/* Main Section */
 .main-section h4 {
     font-family: 'Afacad Flux';
-    text-align: center; 
+    text-align: center;
     color: white;
     font-size: 30px;
     background-color: gray;
     height: auto;
-    width: 25%; 
+    width: 25%;
     border-radius: 10px 20px;
-    position: relative; 
-    left: 2; 
-    padding: 2px; 
-    margin: 0; 
+    padding: 2px;
+    margin: 0 auto;
 }
 
-
-.category-section {
-    margin: 0;
-    position: relative;
-}
-.category-section h2 {
-    position: absolute; /* Position the heading absolutely */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    margin: 0; /* Remove default margin */
-    font-size: 24px; /* Adjust font size as needed */
-    color: #333;
- }
+/* Container */
 .container {
     max-width: 1000px;
     margin: 20px auto;
@@ -188,75 +160,60 @@ nav ul li a {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Fiction Section */
 .fiction-section {
     background-color: thistle;
     padding: 20px;
-    margin: 20px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* margin-right: 25px; */
+    
 }
 
 .fiction-section h2 {
     color: white;
     font-family: 'Montserrat Alternates';
     font-size: 30px;
+    /* margin-bottom: 1px; */
+    /* text-align: center; */
 }
 
-.fiction-section p {
+.fiction-section .subtitle {
     color: black;
     font-size: 13px;
+    font-family: 'Montserrat';
+    display: block;
+    width: 70%;
 }
 
-/* Card Styling */
+/* Card */
 .card {
     width: 250px;
-    height: 350px;
+    height: 400px;
     background-color: white;
     border: 4px solid thistle;
-    border-radius: 25px;
+    border-radius: 45px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 15px;
     text-align: center;
-    margin-top: 20px;
-    transition: box-shadow 0.3s ease,
-    transform 0.3s ease;
-
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-left: 15px;
 }
-.card:hover{
 
+.card:hover {
     box-shadow: 0 0 20px white;
-    /* 0 0 40px white; */
     transform: scale(1.05);
 }
 
-/* .card img {
-    width: 100%;
-    height: 55%;
-    object-fit: contain;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    gap: 15px; 
-    padding: 10px 0;
-    border: none;
-    margin-bottom: 0;
-    border-radius: 1px; */
-    /* transition: transform 0.3s ease; */
-/* } */
-.card img:hover{
-
-    /* transform: scale(1.1); */
-}
-
-.card h3 {
-    font-size: 18px;
+.card h5 {
     margin: 10px 0;
-    color: black;
+    color: gray;
     font-family: 'Montserrat';
 }
 
@@ -264,86 +221,121 @@ nav ul li a {
     color: black;
     font-size: 10px;
     flex-grow: 1;
-    justify-content: left;
     font-family: 'Afacad Flux';
 }
 
 .card a {
     background-color: gray;
     color: white;
-    padding: 10px;
     text-decoration: none;
-    border-radius: 4px;
-    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    transition: background-color 0.3s ease;
 }
 
 .card a:hover {
-    background-color: #666;
+    background-color: darkgray;
 }
+
+/* Image Container */
 .image-container {
-    background-color: white; /* Light background color */
-    padding: 5px; /* Space between image and container border */
-    border-radius: 8px; /* Rounded corners for a smoother look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    display: inline-block; /* Makes the container wrap tightly around the image */
-    width: 100%; /* Make the container width 100% */
-    max-width: 250px; /* Maximum width of the container */
-    height: 130px; /* Fixed height */
-    margin: 0 auto; /* Center the container */
-    overflow: hidden; /* Hide overflow to prevent stretching */
-    border: 1px solid gray;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin-bottom: 15px;
+    
 }
 
 .image-container img {
-    width: 100%; /* Ensure the image width matches the container */
-    height: 100%; /* Adjust the height of the image to match the container */
-    object-fit: contain; /* Ensure the image covers the container while maintaining aspect ratio */
-    border-radius: 8px; /* Match the rounded corners of the container */
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
 }
-/* .details {
+
+/* Modal */
+.modal {
     display: none;
-    margin-top: 10px;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-} */
-/* When the :target pseudo-class is used, display the details */
-/* #details:target + .details {
-    display: block;
-} */
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
+.modal:target{
 
-/* ------------------------------------------------------------------------------------------------------------------------------------- */
-.details {
-    display: none; /* Hide details by default */
-    margin-top: 10px;
-    background-color: #f9f9f9;
+    display: flex;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.modal-content h5{
+
+    font-family: 'Afacad Flux';
+    color: gray;
 }
 
-.show-details-btn,
-.hide-details-btn {
+.close-btn {
     background-color: thistle;
     color: white;
-    padding: 8px 12px;
+    padding: 8px 15px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
 }
 
-.show-details-btn:hover,
-.hide-details-btn:hover {
-    background-color: #666;
+.close-btn:hover {
+    background-color: darkgray;
 }
 
-.show-details-btn:focus + .details,
-.details:focus {
-    display: block; /* Show details when the button is clicked */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fiction-section {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .banner-title {
+        font-size: 35px;
+    }
+
+    .banner-subtitle {
+        font-size: 14px;
+    }
+
+    .banner-button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }
 
-.hide-details-btn:focus + .show-details-btn {
-    display: block; /* Show the "Show" button when details are hidden */
+.container .show-details-btn{
+
+    color: white ;
+    background-color: thistle;
+    border-radius: 22px;
 }
