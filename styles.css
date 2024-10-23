@@ -31,6 +31,7 @@ nav {
     transform: scale(0.5);
     animation: scaleUp 2s ease-in-out forwards;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    margin: 0px 0px 0px 20px;
 }
 
 @keyframes scaleUp {
@@ -83,7 +84,7 @@ nav button {
     transition: scale .1s linear;
 }
 
-.button button:hover {
+.nav button:hover {
     transform: scale(1.1);
 }
 
@@ -97,6 +98,11 @@ nav ul li a {
 .banner-section {
     position: relative;
     text-align: center;
+}
+.banner-section img{
+
+    width: 100%;
+    height: 400px;
 }
 
 .banner-title {
@@ -128,7 +134,7 @@ nav ul li a {
     padding: 5px 15px;
     border-radius: 20px;
     font-family: 'Afacad Flux';
-    background-color: black;
+    background-color: transparent;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
 }
@@ -204,6 +210,7 @@ nav ul li a {
     text-align: center;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     margin-left: 15px;
+    
 }
 
 .card:hover {
@@ -254,7 +261,7 @@ nav ul li a {
     width: 50%;
     height: auto;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 /* Modal */
@@ -262,7 +269,7 @@ nav ul li a {
     display: none;
     position: relative;
     z-index: 1;
-    padding-top: 10px;
+    padding: 20px;
     left: 0;
     top: 0;
     width: 100%;
@@ -270,10 +277,12 @@ nav ul li a {
     overflow: auto;
     background-color: white;
 }
-.modal:target{
-
+/* Hide the element targeted by the fragment identifier */
+.modal:target {
     display: flex;
+   
 }
+
 .modal-content {
     background-color: #fefefe;
     margin: auto;
@@ -288,6 +297,8 @@ nav ul li a {
     font-family: 'Afacad Flux';
     color: gray;
 }
+
+
 
 .close-btn {
     background-color: thistle;
@@ -305,7 +316,7 @@ nav ul li a {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .fiction-section {
         flex-direction: column;
     }
@@ -331,11 +342,17 @@ nav ul li a {
         font-size: 14px;
         padding: 5px 10px;
     }
-}
+} */
 
 .container .show-details-btn{
 
     color: white ;
     background-color: thistle;
     border-radius: 22px;
+    cursor: pointer;
+    
+    
 }
+
+
+
